@@ -1,0 +1,85 @@
+html {
+	display: flex;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+	height: 100%
+}
+
+body {
+	background: #fff;
+	color: #090627;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.brand {
+  background: #2E1F63;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.content {
+  margin-left: 50%;
+  width: 50%;
+}
+
+.page {
+  align-items: center;
+  background: #f6f6f6;
+  display: flex;
+  height: calc(100vh - 2rem);
+  margin: 1rem;
+  justify-content: center;
+}
+
+.page.company {
+  background: #89EC5B;
+}
+
+h1 {
+  background-image: url(./ARTIFACTUAL.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 274px;
+  text-indent: -9999px;
+  margin: 3rem 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.4;
+  max-width: 360px;
+  text-align: center;
+}
+
+h2 strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 880px) {
+  .brand,
+  .content {
+    margin: 0;
+    width: 100%;
+  }
+
+  .brand {
+    position: static;
+    height: 50vh;
+  }
+
+  .page {
+    height: calc(50vh - 2rem);
+  }
+}
